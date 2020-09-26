@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<link rel="stylesheet" type="text/css"href="
+        ./MS/stylekopia.css
+         ">
+     <link rel="stylesheet" type="text/css"href="
+         css/fontello.css
+         ">
+
+          <link rel = "icon" href =
+"https://cdn.discordapp.com/attachments/377114533782880256/752257768114880612/ikona.png" 
+        type = "image/x-icon">
+		<title class="">LC RESOURCES</title>
+    </head>
+
+    <body> 
+    	
+
+
+
+
+	
+
+
+ <div class="zaloguj"><a href= "/css2/templates/LogIn_index.html" style="color: white; text-decoration: none; font-size: 20px">Log In</a></div>
+	<div class="menu-design"><strong>L.C RESOURCES</strong></div>
+
+	<div>
+	    <div id= "navbar" class="menu">
+	    
+                
+                    <a href="/Strona2/Moja%20strona.html">Home</a>
+                
+            <div class="dropdown">
+                <button class="dropbtn">
+                    <a href="">Leaving Certificate<div class="arrow">▼</div></a>
+                </button>
+                   <div class="dropdown-content">
+                       <a href="">Mathematics</a>
+                       <a href="">Physics</a>
+                       <a href="">Chemistry</a>
+                       <a href="file:///C:/Users/Mirelka/Desktop/Strona2/Biologia%20%E2%80%94%20kopia.html">Biology</a>
+                   </div>
+            </div>
+           
+                       
+                   </div>
+            </div>	
+
+           
+
+            	
+           
+           
+        </div>
+
+    
+        	
+
+    		<div class="content Searchable"><h1 style="color:black">Welcome</h1>
+    			<p class="Searchable">
+         
+            <STRONG>LASTEST UPDATE 26.09.2020</STRONG><br/>
+            <a href="file:///C:/Users/Mirelka/Desktop/Strona2/Nervous.html" style=" text-decoration:none;"class="text-blogsandnews Searchable" ><p  class="text-blogsandnews "><img class="text-blogsandnews1" width="1999px"src="https://media.proprofs.com/images/QM/user_images/2503852/New%20Project%20(53)(81).jpg"/>Nervous System, The Sense Organs, Homeostatis and Gaseous Exchange Revision Exam Question [READ MORE]>></p></a>   
+          </p>
+				</div>
+
+			
+
+
+
+
+		 <div class="socia">
+    		<div class="social-divs">
+    			<div class="fb"><i class="icon-facebook-squared Searchable"></i></div>
+    			<div class="yt"><i class="icon-youtube-play"></i></div>
+    			<div class="tw"><i class="icon-twitter-squared"></i></div>
+    			<div class="gplus"><a href="https://www.google.com" target="_blank"><i class="icon-gplus"></i></div>
+    			<div style="clear:both"></div>
+    		</div>
+
+		</div>
+ 
+
+	    <a href="MyWebsite_index.html" style="color: white;text-decoration: none"><div class="footer">Mirella Głowińska &copy; 2020</div></a>
+
+	    <script src="jquery-1.11.3.min.js"></script>
+
+        <script>
+       window.onscroll = function() {myFunction()};
+
+        var navbar = document.getElementById("navbar");
+
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+             if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+              } else {
+                navbar.classList.remove("sticky");
+             }
+        }
+   </script>  
+	    
+
+
+       <script>
+        var Input = document.getElementById('wrraper');
+        var Output = document.getElementById('SearchContainer');
+        var Results = [];
+        var SearchPhrase;
+        var Classes = document.getElementsByClassName("Searchable");
+        var First;
+
+        function ReadClasses() {
+
+          if(Input.value.length > 1)
+          {
+        var Loop = Output.children;
+        if(Loop.length > 0)
+      {
+        for(let x = 0; x < Loop.length; x++)
+        {
+          Loop[x].remove();
+        }
+    }
+    Results = [];
+    SearchPhrase = Input.value.split('');
+    First = true;
+    Classes = document.getElementsByClassName("Searchable");
+    for (let x = 0; x < Classes.length; x++) {
+        let Words = Classes[x].innerHTML.split(' ');
+        for (let X = 0; X < Words.length; X++) {
+            let valid = true;
+            let Chars = Words[X].split('');
+            for (let G = 0; G < SearchPhrase.length; G++) {
+                if (SearchPhrase[G] != Chars[G]) {
+                    valid = false;
+                    break;
+                }
+            }
+            if (valid == true)
+            {
+                AddToList(Words[X]);
+            }
+        }
+      }
+    ShowUpResults();
+    }
+  }
+
+function AddToList(Result) {
+    if (First) {
+        First = false;
+        Results[0] = Result;
+    }
+    else {
+        Results[Results.length] = Result;
+    }
+}
+
+function ShowUpResults() {
+    for (let X = 0; X < Results.length; X++) {
+        var node = document.createElement("div");
+        node.className += "Result";
+        var textnode = document.createTextNode(Results[X]);
+        node.appendChild(textnode);
+        Output.appendChild(node);
+    }
+}
+        </script>
+	  
+
+  </body>
+</html>
