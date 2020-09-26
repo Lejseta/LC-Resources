@@ -1,5 +1,342 @@
 <!DOCTYPE html>
-<html>
+<html><style>body{
+    margin: 0;
+    background:#212121;
+     
+}
+.menu-design{
+    background:url("https://www.thesun.ie/wp-content/uploads/sites/3/2018/08/NINTCHDBPICT000257128394.jpg");
+    background-size:100%, 100px;
+    padding:90px; 
+    margin:auto;
+    
+    text-align:center;
+    color:black;
+    font-size: 100px;
+   
+
+}
+
+.menu{
+    width:100%;
+    height: 63px; background-color:#f03a3a;
+}
+
+.menu a{
+    float:left;
+    margin:2;
+    display:block;
+    color:white;
+    text-align: center;
+    text-decoration:none;
+    padding:17px;
+    font-size:30px;
+    border-right: 1px solid #2b2d2e;
+    line-height: 28px;
+    
+}
+
+
+.arrow{
+     margin: 0;
+    font-size: 20px;
+    float:right;
+    text-align: right;
+    padding-left: 8px;
+}
+
+.menu a:hover{
+    background-color:#2b2d2e;
+    transform:translate(0.1px, 0.1px);
+    -webkit-transition:background 0.3s ease-in-out;
+    -moz-transition:background 0.3s ease-in-out;
+    -o-transition:background 0.3s ease-in-out;
+    box-shadow: 0 0 5px #2b2d2e,
+                0 0 25px #2b2d2e,
+                0 0 50px #2b2d2e,
+                0 0  200px #2b2d2e;
+}
+
+
+
+.content{
+    width: 1000px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    padding: 160px;
+    font-size: 30px;
+    background-color:#f5f5f5;
+    font-family: 'Amatic SC', cursive;
+
+}
+
+.socia{
+
+    width: 100%;
+    text-align: center;
+    background-color:#2b2d2e;
+    color: white;
+}
+
+.social-divs{
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.fb{
+    width: 250px;
+    height: 155px;
+    float: left;
+}
+
+.fb:hover{
+    background-color: #4668b3;
+}
+
+.yt{
+    width: 250px;
+    height: 155px;
+    float: left;
+}
+
+.yt:hover{
+    background-color: #e83f3c;
+}
+
+.yt{
+    width: 250px;
+    height: 155px;
+    float: left;
+}
+
+.yt:hover{
+    background-color: #e83f3c;
+}
+.tw{
+    width: 250px;
+    height: 155px;
+    float: left;
+}
+
+.tw:hover{
+    background-color: #3095d3;
+}
+.gplus{
+    width: 250px;
+    height: 155px;
+    float: left;
+}
+
+.gplus:hover{
+    background-color: #d95333;
+}
+
+.footer{
+    text-align: center;
+    background-color: #18191a ;
+    padding: 30px;
+    color: white;
+}
+
+.sticky
+{
+    width:100%;
+    position: fixed;
+    left: :0;
+    top: 0;
+    z-index:100;
+}
+
+
+
+
+.dropdown {
+  float: left;
+  /*overflow: hidden*/
+}
+
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 20 px;
+  border: none;
+  outline: none;
+  color: white;
+  padding:0px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+  
+}
+
+
+
+.dropdown-content {
+  display: none;
+  position: fixed;
+  background-color: #3e4142;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  transform: translateY(0px);
+
+
+}
+
+
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 10px 30px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  
+}
+
+
+.dropdown-content a:hover {
+  background-color: #151617;
+}
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+
+.Przycisk{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    min-height: 7vh;
+    flex-direction: column;
+    color: #a993d9;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-left: 300px;
+    margin-bottom: 30px;
+    max-width: 400px;
+        border : 3px solid #a993d9; /*linear-gradient(90deg,#99b4e0,#a993d9,#d293d9,#d66767);*/
+        border-radius: 40px;
+        
+}
+
+.Przycisk a{
+    position: relative;
+    display: inline-block;
+    padding: 25px 30px;
+    margin: 20px 0;
+    transition:0.5s;
+    letter-spacing: 2px;
+    
+
+   
+
+}
+.Przycisk:hover{
+    background: linear-gradient(90deg,#99b4e0,#a993d9,#d293d9,#d66767);
+    color: #f5f5f5 ;
+    box-shadow: 0 0 5px #99b4e0;
+    box-shadow: 0 0 25px #a993d9;
+    box-shadow: 0 0 50px #a993d9;
+    box-shadow: 0 0 60px #a993d9;
+   transform: scale(0.9);
+   border:none;
+    
+}
+
+.Przycisk  a span{
+    position: absolute;
+    display: block;
+}
+
+#wrraper{
+    align-items: center;
+    margin-top: 0px;
+
+    font-size: 33px;
+    min-height: 56px;
+    max-width: 900px;
+    text-align: center;
+    margin-left: 1205px;
+
+   }
+
+   .lupa{
+    font-size: 30px;
+    text-align: center;
+    background-color: #888d8f;
+    padding: 9px;
+    background-size: 30px;
+   
+   }
+.lupa:hover{
+    background-color: #414142;
+}
+   .text-blogsandnews{
+    /*border: 2px solid #404040;*/
+     border-radius: 10px;
+     width: 1000px;
+     background-color: #cbcfd1;
+     transition-duration: 700ms;
+    transition-property: background, transform; 
+     text-align: justify;
+     font-size: 28px;
+     font-family: 'Antic Slab', serif;
+     color: black;
+   }
+   .text-blogsandnews1{
+    border: none;
+     border-radius: 3px;
+     width: 1000px;
+   }
+
+   .text-blogsandnews:hover{
+    color: white;
+    background: #404040;
+   }
+   .SM{
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 0px;
+    font-family: 'Almarai', sans-serif;
+
+   }
+
+   
+#SearchContainer{
+    position: fixed;
+    background-color: #3e4142;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    font-size: 30px;
+    margin-left: 1920px;
+    text-align: left;
+    margin-top: 0px;
+
+}
+
+.Result{
+  float: none;
+  color: white;
+  padding: 6px 190px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  font-size: 50px;
+  
+}
+.zaloguj{
+  background-color: black;
+  color: white;
+}
+</style>
     <head>
 	<link rel="stylesheet" type="text/css"href="
         ./MS/nervous.css
