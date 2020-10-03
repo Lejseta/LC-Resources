@@ -588,8 +588,23 @@ a.zaloguj3:hover{
 .icon-twitter-squared { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf304;&nbsp;'); }
 .icon-facebook-squared { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf308;&nbsp;'); }
 	
+  @media (max-width: 600px) {
+  #mobile-menu-btn {
+    display: block;
+  }
+  nav p {
+    display: none;
+  }
+  .mobile-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
 </style>
     <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="stylesheet" type="text/css"href="
         ./MS/nervous.css
          ">
@@ -610,25 +625,25 @@ a.zaloguj3:hover{
 
 
 	
-<div style= "height: 30px; class="zaloguj"><a class= "zaloguj2" href= "file:///C:/Users/Mirelka/Desktop/css2/templates/LogIn_index.html" style=" text-decoration: none; font-size: 20px; float:right;">Log In</a>
- <div style= "height: 30px; class="zaloguj"><a class= "zaloguj3" href= "file:///C:/Users/Mirelka/Desktop/css2/templates/LogIn_index.html" style=" text-decoration: none; font-size: 20px; float:right;">Register</a></div></div>
+<div style= "height: 30px; background: black" class="zaloguj"><a class= "zaloguj2" href= "file:///C:/Users/Mirelka/Desktop/css2/templates/LogIn_index.html" style=" text-decoration: none; font-size: 20px; float:right;">Log In</a>
+ <div style= "height: 30px; "class="zaloguj"><a class= "zaloguj3" href= "file:///C:/Users/Mirelka/Desktop/css2/templates/LogIn_index.html" style=" text-decoration: none; font-size: 20px; float:right;">Register</a></div></div>
 	<div class="menu-design"><strong>L.C RESOURCES</strong></div>
 
 	<div>
 	    <div id= "navbar" class="menu">
 	    
                 
-                    <a href="https://lejseta.github.io/LC-Resources/Home.html">Home</a>
+                    <a href="https://lejseta.github.io/LC-Resources/Home.html" >Home</a>
                 
             <div class="dropdown">
                 <button class="dropbtn">
-                    <a href="">Leaving Certificate<div class="arrow">▼</div></a>
+                    <a href="" onclick="Men()">Leaving Certificate<div class="arrow">▼</div></a>
                 </button>
                    <div class="dropdown-content">
                        <a href="">Mathematics</a>
                        <a href="">Physics</a>
                        <a href="">Chemistry</a>
-                       <a href="https://lejseta.github.io/LC-Resources/Biology.html">Biology</a>
+                       <a href="https://lejseta.github.io/LC-Resources/Biology.html"  onclick="Men()">Biology</a>
                    </div>
             </div>
            
@@ -640,40 +655,44 @@ a.zaloguj3:hover{
 
 
 
-
+           <script>
+             function Men() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+           </script>          	
            
-            
-            	
-           
-           
-        </div>
-
-    
-        	
+          </div>
 
     		<div class="content Searchable"><h1 style="color:black">Biology>The Nervous System, The Sense Organs, Homeostatis and Gaseous Exchange</h1>
           
     			<p class="Searchable">
             <p>Question 14 2019 a)</p>
-            <p><img  width= "100%" src="https://cdn.discordapp.com/attachments/377114533782880256/759367309927251988/nervous.pgn.png"></p><hr/>
-			<a id="jakiesid1" style="display:block;" href="#" onclick="document.getElementById('jakiesid2').style.display='block';document.getElementById('jakiesid1').style.display='none';">
-    <button>Aby rozwinąć kliknij tu!</button>
-			</a></div>
+            <p><img  width= "100%" src="https://cdn.discordapp.com/attachments/377114533782880256/759360713042034708/nervous.pgn.png"></p>
+			<a id="jakiesid1" style="display:block;" href="#" onclick="document.getElementById('jakiesid2').style.display='block';document.getElementById('jakiesid1').style.display='none'; document.querySelector('#jakiesid1').addEventListener('click', function(event) {
+  event.preventDefault();
+});
+">
+    <button type="button" tabindex="1"> Show Marking Scheme</button>
+			</a>  
+            <div id="jakiesid2" style="display:none;">
+    <img  width= "100%" src="https://cdn.discordapp.com/attachments/377114533782880256/759367309927251988/nervous.pgn.png">:)
+    <button onclick="document.getElementById('jakiesid1').style.display='block';document.getElementById('jakiesid2').style.display='none';document.querySelector('#jakiesid2').addEventListener('click', function(event) {
+  event.preventDefault();
+});">
+        Hide Marking Scheme</button>
+    
+</div><hr/>
+        </div>
 
 
-            <p>Question Q11 c) 2018</p><p><img width= "100%"src= "https://cdn.discordapp.com/attachments/377114533782880256/759369145187565588/nervous2.pgn.png"></p><hr/>
-			
-
-
-
-            <p>Question 14,15 2017</p><p><img  width= "100%" src="https://cdn.discordapp.com/attachments/377114533782880256/759373369518587954/nervous3pgn.png"></p><hr/>
-	
-           
+      
 				</div>
-
-			
-        
-
+      </div>
 
 
 		 <div class="socia">
